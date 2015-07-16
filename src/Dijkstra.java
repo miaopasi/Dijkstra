@@ -113,9 +113,14 @@ public class Dijkstra
     		return "";
     	}
     	else{
-    	List<Vertex> res_path = _get_path(source, target);
-    	System.out.println("PATH: "+res_path);
-    	return Dijkstra_Json._to_json(res_path); 
+    	    List<Vertex> res_path = _get_path(source, target);
+//            System.out.println("PATH: "+res_path);
+            String res_json = Dijkstra_Json._to_json(res_path);
+            for(Vertex v: map_vertices){
+                v.previous = null;
+                v.minDistance = Double.POSITIVE_INFINITY;
+            }
+    	    return res_json;
     	}
 	}
     
