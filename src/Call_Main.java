@@ -9,8 +9,8 @@ public class Call_Main {
         Dijkstra dj = new Dijkstra();
 //        dj.get_path_unit_test(file_path);
         dj.load_config(file_path, poi_path);
-        long source_ind = 1010011700030000L;
-        long target_ind = 1010011700030008L;
+        long source_ind = 1010011700030011L;
+        long target_ind = 1010011700030015L;
         String res_json = dj.get_path_poi(source_ind, target_ind);
         System.out.println(res_json);
         System.out.println("=====================================================");

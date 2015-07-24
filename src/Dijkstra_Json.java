@@ -225,6 +225,7 @@ public class Dijkstra_Json {
 		}
 		output_json += "\t]\n}\n";
 		path.clear();
+		switchmark = 0;
 		return output_json;
 		}
 	}
